@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Open Sans", arial, sans-serif;
+  font-family: 'Open Sans', arial, sans-serif;
   padding-bottom: 56px;
   margin: 0;
   height: 100vh;
@@ -40,7 +40,7 @@ table tr:hover {
 }
 
 table tr.active {
-  background-color: #333;
+  background-color: rgb(92, 60, 60);
 }
 
 i.fa {
