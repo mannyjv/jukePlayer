@@ -1,25 +1,37 @@
 import React from 'react';
 
 const Songs = (props) => {
-  const album = props.album;
-  const { songs, artist } = album;
-  const start = props.start;
-  const currentSong = props.currentSong;
+  const { songs, toggleOne, currentSong, isPlaying, artist } = props;
+  return (
+    <table id="songs">
+      <tbody>
+        <tr className="gray">
+          <td />
+          <td>#</td>
+          <td>Name</td>
+          <td>Artist</td>
+          <td>Genre</td>
+        </tr>
+        {songs.map((song, idx) => {
+          const isCurrentlyPlaying = currentSong.id === song.id && isPlaying;
 
-  return songs.map((song, idx) => {
-    return (
-      <tr key={idx} className={song.id === currentSong.id ? 'active' : ''}>
-        <td onClick={() => start(song, song.audioUrl)}>
-          <i
-            className={song.id === currentSong.id ? '' : 'fa fa-play-circle'}
-          />
-        </td>
-        <td>{idx + 1}</td>
-        <td>{song.name}</td>
-        <td>{artist.name}</td>
-        <td>{song.genre}</td>
-      </tr>
-    );
-  });
+          return (
+            <tr key={song.id} className={isCurrentlyPlaying ? 'active' : ''}>
+              <td>
+                <i
+                  className={isCurrentlyPlaying ? '' : 'fa fa-play-circle'}
+                  onClick={() => toggleOne(song, songs)}
+                />
+              </td>
+              <td>{idx + 1}</td>
+              <td>{song.name}</td>
+              <td>{artist.name}</td>
+              <td>{song.genre}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
 };
 export default Songs;

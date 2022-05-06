@@ -1,37 +1,22 @@
 import React from 'react';
-import Songs from './Songs'
+import Songs from './Songs';
+import AlbumInfo from './AlbumInfo';
 
 const SingleAlbum = (props) => {
-const albumInProp = props.album
-const start = props.start
-const currentSong = props.currentSong
-const { name, artist, artworkUrl} = albumInProp
+  const { album, toggleOne, isPlaying, currentSong } = props;
 
-return (
-    <div className='container'>
-          <div id='single-album' className='column'>
-            <div className='album'>
-              <a>
-                <img src={artworkUrl} />
-                <p>{name}</p>
-                <small>{artist.name}</small>
-              </a>
-            </div>
-            <table id='songs'>
-              <tbody>
-                <tr className='gray'>
-                  <td />
-                  <td>#</td>
-                  <td>Name</td>
-                  <td>Artist</td>
-                  <td>Genre</td>
-                </tr>
-                <Songs album={albumInProp} start={start} currentSong={currentSong}/>
-              </tbody>
-            </table>
-          </div>
-        </div>
-  )
-}
+  return (
+    <div id="single-album" className="column">
+      <AlbumInfo album={album} />
+      <Songs
+        songs={album.songs}
+        artist={album.artist}
+        toggleOne={toggleOne}
+        currentSong={currentSong}
+        isPlaying={isPlaying}
+      />
+    </div>
+  );
+};
 
 export default SingleAlbum;

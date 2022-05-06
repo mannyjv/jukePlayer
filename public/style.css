@@ -40,7 +40,7 @@ table tr:hover {
 }
 
 table tr.active {
-  background-color: rgb(92, 60, 60);
+  background-color: rgb(115, 72, 72);
 }
 
 i.fa {
@@ -120,7 +120,7 @@ td {
 
 #sidebar section {
   text-align: left;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 #sidebar a {
@@ -129,7 +129,7 @@ td {
 }
 
 #sidebar a:hover {
-  border-bottom: 2px solid #00aaaa;
+  border-bottom: 2.5px solid #00aaaa;
 }
 
 /* classes */
