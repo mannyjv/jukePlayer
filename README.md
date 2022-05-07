@@ -1,4 +1,4 @@
-# Juke: A simple spotify clone to play your favorite music. 
+# Juke: A simple spotify clone to play your favorite music!
 
 check it out here... 
 
