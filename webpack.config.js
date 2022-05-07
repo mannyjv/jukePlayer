@@ -2,7 +2,7 @@ module.exports = {
   entry: ['./client/index.js'],
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './public/bundle.js',
   },
   mode: 'development',
   context: __dirname,
@@ -14,9 +14,9 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['@babel/preset-react']
-        }
-      }
-    ]
-  }
-}
+          presets: ['@babel/preset-react'],
+        },
+      },
+    ],
+  },
+};
