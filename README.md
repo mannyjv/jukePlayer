@@ -8,8 +8,8 @@ or clone it to your machine!
 
 Technologies Used
 ------
-Backend: PostgreSql, Sequelize, node.js, express.js
-Front: React, HTML (making use of  <audio> element), Javascript, CSS
+- Backend: PostgreSql, Sequelize, node.js, express.js
+- Front: React, HTML (making use of  <audio> element), Javascript, CSS
 
 
 ## Setup
