@@ -1,6 +1,6 @@
 # Juke: A simple spotify clone to play your favorite music!
 
-turn on the sound of the video check it out here... 
+Please turn on the sound of the video and check it out here... 
 
 https://user-images.githubusercontent.com/46333621/167256594-351d27c0-c7c1-46e5-adf7-54e43a421dd5.mov
 
